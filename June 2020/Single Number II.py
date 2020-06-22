@@ -16,7 +16,3 @@ class Solution(object):
             else:
                 if(nums[i] != nums[i-1] and nums[i] != nums[i+1]):
                     return nums[i]
-
-
-a = [2,2,3,2]
-print(Solution().singleNumber(a))
