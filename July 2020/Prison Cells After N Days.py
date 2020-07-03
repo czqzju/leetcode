@@ -23,7 +23,7 @@ class Solution(object):
             for i in range(1, 7):
                 temp[i] = 1 if cells[i - 1] == cells[i + 1] else 0
 
-            if reduce(lambda x, y : x and y, map(lambda p, q: p == q, temp, first), True):
+            if reduce(lambda x, y : x and y, map(lambda p, q: p == q, temp, first)):
                 N %= cycle
 
             cells = deepcopy(temp)
