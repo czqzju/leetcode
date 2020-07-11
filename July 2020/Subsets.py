@@ -6,8 +6,8 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[List[int]]
         """
-        res = map(list, chain.from_iterable(combinations(nums, r) for r in range(len(nums) + 1)))
-        return [x for x in res]
+        return [x for x in map(list, chain.from_iterable(combinations(nums, r) for r in range(len(nums) + 1)))]
+
 
 
 print(Solution().subsets([1,2,3]))
